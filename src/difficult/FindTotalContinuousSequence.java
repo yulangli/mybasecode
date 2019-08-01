@@ -9,8 +9,8 @@ import java.util.ArrayList;
  */
 
 public class FindTotalContinuousSequence {
-    public ArrayList<ArrayList<Integer>> FindContinuousSequence(int sum) {
-        ArrayList<ArrayList<Integer>> sqList = new ArrayList<ArrayList<Integer>>();
+    private ArrayList<ArrayList<Integer>> FindContinuousSequence(int sum) {
+        ArrayList<ArrayList<Integer>> sqList = new ArrayList<>();
         if(sum < 3) return sqList;
         int small = 1;
         int big = 2;
@@ -19,7 +19,7 @@ public class FindTotalContinuousSequence {
         //small在增加到sum的一半的过程中肯定会大于sum
         int middle = (1 + sum) / 2;
         while(small < middle){
-            ArrayList<Integer> sq = new ArrayList<Integer>();
+            ArrayList<Integer> sq = new ArrayList<>();
             if(curSum == sum){
                 for (int i = small; i <= big; i++) {
                     sq.add(i);

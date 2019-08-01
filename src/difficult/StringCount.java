@@ -26,7 +26,7 @@ public class StringCount {
                 map.put(key, value+1);
 
             }else {
-                if(c>'A'&&c<'Z'||c>='a'&&c<='z'){
+                if(c>='A'&&c<='Z'||c>='a'&&c<='z'){
                     map.put(key, 1);
                 }
             }

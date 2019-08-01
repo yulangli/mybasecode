@@ -21,10 +21,9 @@ public class FindFristChar {
         // 遍历字符串，构造两个数组
         for (int i = 0; i < str.length(); i++) {
             char ch = str.charAt(i);
-            int loc = ch;
-            num[loc]++;
-            if (indexs[loc] == -1) {
-                indexs[loc] = i;
+            num[(int) ch]++;
+            if (indexs[(int) ch] == -1) {
+                indexs[(int) ch] = i;
             }
         }
         // 遍历数组，得到最终索引

@@ -15,11 +15,13 @@ public class qiuSum {
     }
 
     private static int sum(int i) {
-        int sum=0;
+        int sum;
         if(i==0){
             return 0;
         }
-        return sum = i + sum(i - 1);
+        int sum1 = sum(i - 1);
+        sum =i+sum1;
+        return sum;
 
     }
 }
